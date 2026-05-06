@@ -21,7 +21,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.1">
+<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.2">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -43,7 +43,7 @@
             <icon>resources/media/hermes_icon.png</icon>
             <fanart>resources/media/hermes_fanart.jpg</fanart>
         </assets>
-        <news>v4.0.1 - First Hermes release. Fork of Twilight 3.2.87 + embedded ScrapperHermes (CocoScrapers 1.0.32). English UI. Fixed Trakt user-list pagination beyond 100 items.</news>
+        <news>v4.0.2 - Real Debrid / Trakt authorize: removed auto-open browser path that hid the code dialog behind the browser window. Standard flow now: dialog shows code + URL on screen.</news>
     </extension>
 </addon>
 </addons>
