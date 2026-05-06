@@ -18,7 +18,7 @@ If "Install from zip file" is disabled, enable **Settings → System → Add-ons
 | Add-on | Version | Purpose |
 |---|---|---|
 | `repository.hermes` | 1.0.1 | This repository |
-| `plugin.video.hermes` | 4.0.9 | The video add-on (Real Debrid sources, embedded scraper) |
+| `plugin.video.hermes` | 4.0.10 | The video add-on (Real Debrid sources, embedded scraper) |
 
 ## License
 
