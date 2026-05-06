@@ -2,9 +2,9 @@
 <addon id="repository.hermes" name="Hermes Repository" version="1.0.0" provider-name="hermestelemachus">
 	<extension point="xbmc.addon.repository" name="Hermes Repository">
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/hermestelemachus/hermes/main/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/hermestelemachus/hermes/main/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/hermestelemachus/hermes/main/zips</datadir>
+			<info compressed="false">https://hermestelemachus.github.io/hermes/addons.xml</info>
+			<checksum>https://hermestelemachus.github.io/hermes/addons.xml.md5</checksum>
+			<datadir zip="true">https://hermestelemachus.github.io/hermes/zips</datadir>
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
