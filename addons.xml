@@ -43,7 +43,7 @@
             <icon>resources/media/hermes_icon.png</icon>
             <fanart>resources/media/hermes_fanart.jpg</fanart>
         </assets>
-        <news>v4.0.8 - Trakt user list contents: switched from per-page loop (which the Trakt items endpoint silently ignored) to a single request with limit=1000 (Trakt's maximum). Lists with up to 1000 items now load in full.</news>
+        <news>v4.0.8 - Trakt user list contents: single request with limit=1000 (Trakt's max) so the full list reaches local cache in one fast call. Defaults: Paginate Lists = Add-on Lists Only with limit 100 per page, so a Next page button appears for lists larger than 100 items (and metadata is only fetched for the visible page - friendly to slower devices like Android TV).</news>
     </extension>
 </addon>
 </addons>
