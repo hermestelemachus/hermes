@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="repository.hermes" name="Hermes Repository" version="1.0.0" provider-name="hermestelemachus">
+	<extension point="xbmc.addon.repository" name="Hermes Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/hermestelemachus/hermes/main/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/hermestelemachus/hermes/main/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/hermestelemachus/hermes/main/zips</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Hermes Repository</summary>
+		<description lang="en">Repository hosting the Hermes Kodi add-on (Twilight + CocoScrapers merged fork).</description>
+		<platform>all</platform>
+		<license>GPL-3.0-or-later</license>
+		<source>https://github.com/hermestelemachus/hermes</source>
+		<news>Initial release of the Hermes repository.</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.1">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.19.1"/>
+        <import addon="script.module.pyqrcode" version="1.2.1+matrix.1"/>
+    </requires>
+    <extension library="resources/lib/hermes.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="resources/lib/service.py" point="xbmc.service"/>
+    <extension library="resources/lib/" point="xbmc.python.module"/>
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="en">Hermes - Real Debrid sources add-on with embedded CocoScrapers.</summary>
+        <description lang="en">This add-on is intended for advanced Kodi users only. You must own the content of any media you play through this addon.</description>
+        <platform>all</platform>
+		<disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers.</disclaimer>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <assets>
+            <icon>resources/media/hermes_icon.png</icon>
+            <fanart>resources/media/hermes_fanart.jpg</fanart>
+        </assets>
+        <news>v4.0.1 - First Hermes release. Fork of Twilight 3.2.87 + embedded ScrapperHermes (CocoScrapers 1.0.32). English UI. Fixed Trakt user-list pagination beyond 100 items.</news>
+    </extension>
+</addon>
+</addons>
