@@ -21,7 +21,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.7">
+<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.8">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -43,7 +43,7 @@
             <icon>resources/media/hermes_icon.png</icon>
             <fanart>resources/media/hermes_fanart.jpg</fanart>
         </assets>
-        <news>v4.0.7 - Cleanup: removed orphaned Twilight/Fen content (fen_* dirs, twilight.png files, kodirdil/unused, kodirdil/websites/old). Also dropped the History entry from the Real Debrid and Premiumize submenus in My Services.</news>
+        <news>v4.0.8 - Trakt user list contents: switched from per-page loop (which the Trakt items endpoint silently ignored) to a single request with limit=1000 (Trakt's maximum). Lists with up to 1000 items now load in full.</news>
     </extension>
 </addon>
 </addons>
