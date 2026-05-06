@@ -21,7 +21,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.8">
+<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.9">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -43,7 +43,7 @@
             <icon>resources/media/hermes_icon.png</icon>
             <fanart>resources/media/hermes_fanart.jpg</fanart>
         </assets>
-        <news>v4.0.8 - Trakt user list contents: single request with limit=1000 (Trakt's max) so the full list reaches local cache in one fast call. Defaults: Paginate Lists = Add-on Lists Only with limit 100 per page, so a Next page button appears for lists larger than 100 items (and metadata is only fetched for the visible page - friendly to slower devices like Android TV).</news>
+        <news>v4.0.9 - Default for "Cache Kodi menus" flipped to ON (cacheToDisc=true). Coming back to a list after playing a movie now reads the rendered page from Kodi's local directory cache instead of rebuilding all 100 ListItems with art/info each time - significantly faster on Android TV.</news>
     </extension>
 </addon>
 </addons>
