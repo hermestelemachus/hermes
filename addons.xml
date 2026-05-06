@@ -21,7 +21,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.2">
+<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.3">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -43,7 +43,7 @@
             <icon>resources/media/hermes_icon.png</icon>
             <fanart>resources/media/hermes_fanart.jpg</fanart>
         </assets>
-        <news>v4.0.2 - Real Debrid / Trakt authorize: removed auto-open browser path that hid the code dialog behind the browser window. Standard flow now: dialog shows code + URL on screen.</news>
+        <news>v4.0.3 - Solid (opaque) backdrop on all custom dialogs (was 80% see-through). Auth flows: try/finally cleanup of QR icon file + dialog close even on cancel/exception, plus pre-clean of stale QR before opening, to prevent leftover icon from a previous auth showing up in a later dialog.</news>
     </extension>
 </addon>
 </addons>
