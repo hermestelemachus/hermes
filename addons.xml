@@ -21,7 +21,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.5">
+<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.6">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -43,7 +43,7 @@
             <icon>resources/media/hermes_icon.png</icon>
             <fanart>resources/media/hermes_fanart.jpg</fanart>
         </assets>
-        <news>v4.0.5 - Renamed remaining skin texture folders that were missed in 4.0.4 (twilight_buttons -> hermes_buttons, twilight_diffuse -> hermes_diffuse, twilight_flags -> hermes_flags in Default/media). XML/Python code already referenced hermes_* paths so all those textures were missing on disk.</news>
+        <news>v4.0.6 - Restored original 80% dialog backdrop opacity now that all skin textures load correctly (the see-through look in 4.0.0-4.0.4 was caused by missing texture folders, not the opacity). Dialog box itself is fully opaque as designed.</news>
     </extension>
 </addon>
 </addons>
