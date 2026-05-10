@@ -13,6 +13,13 @@ scraper module (`ScrapperHermes`). Single addon, no external dependencies.
 
 If "Install from zip file" is disabled, enable **Settings → System → Add-ons → Unknown sources** first.
 
+### Alternative install (via file source)
+
+1. **Settings → File Manager → Add source** →
+   URL: `https://hermestelemachus.github.io/hermes/` — name: `hermes`
+2. **Add-ons → Install from zip file** → `hermes` → `repository.hermes-1.0.1.zip`
+3. **Install from repository → Hermes Repository → Video add-ons → Hermes → Install**
+
 ## What's inside
 
 | Add-on | Version | Purpose |
