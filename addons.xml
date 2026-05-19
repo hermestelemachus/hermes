@@ -21,7 +21,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.10">
+<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.11">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -43,7 +43,7 @@
             <icon>resources/media/hermes_icon.png</icon>
             <fanart>resources/media/hermes_fanart.jpg</fanart>
         </assets>
-        <news>v4.0.10 - On first run after each upgrade, the service now force-applies pagination + menu-cache defaults (paginate.lists=1, paginate.limit_addon=100, kodi_menu_cache=true) so existing users with a saved profile get the new behaviour without manually changing settings. After that one-shot, the user is free to override.</news>
+        <news>v4.0.11 - Fixed Movies/TV Popular, Popular Today, Latest Releases and other TMDb-driven lists failing with KeyError after the previous default TMDb API key was revoked. Updated default TMDb key and added graceful fallback in tmdb_api.get_data so a future revocation just returns an empty list instead of crashing the directory.</news>
     </extension>
 </addon>
 </addons>
