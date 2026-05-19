@@ -21,7 +21,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.11">
+<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.12">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -43,7 +43,7 @@
             <icon>resources/media/hermes_icon.png</icon>
             <fanart>resources/media/hermes_fanart.jpg</fanart>
         </assets>
-        <news>v4.0.11 - Fixed Movies/TV Popular, Popular Today, Latest Releases and other TMDb-driven lists failing with KeyError after the previous default TMDb API key was revoked. Updated default TMDb key and added graceful fallback in tmdb_api.get_data so a future revocation just returns an empty list instead of crashing the directory.</news>
+        <news>v4.0.12 - Auto-migrate users whose saved tmdb_api setting still points at a revoked default key. Kodi never overwrites a user-saved setting when the addon default changes, so v4.0.11 only helped fresh installs. On startup the service now compares the saved key against a list of known-dead defaults and rewrites it to the current default. Users who set their own TMDb key are not touched.</news>
     </extension>
 </addon>
 </addons>
