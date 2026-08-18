@@ -21,7 +21,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.12">
+<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.13">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -43,7 +43,7 @@
             <icon>resources/media/hermes_icon.png</icon>
             <fanart>resources/media/hermes_fanart.jpg</fanart>
         </assets>
-        <news>v4.0.12 - Auto-migrate users whose saved tmdb_api setting still points at a revoked default key. Kodi never overwrites a user-saved setting when the addon default changes, so v4.0.11 only helped fresh installs. On startup the service now compares the saved key against a list of known-dead defaults and rewrites it to the current default. Users who set their own TMDb key are not touched.</news>
+        <news>v4.0.13 - Fix Trakt user lists showing only the first 250 items. Trakt now caps the per-page limit at 250, so the old single limit=1000 request silently truncated large lists. List contents are now fetched in pages of 250 (up to 5000 items) and sorted globally after the merge.</news>
     </extension>
 </addon>
 </addons>
