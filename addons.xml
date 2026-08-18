@@ -21,7 +21,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.13">
+<addon id="plugin.video.hermes" name="Hermes" provider-name="Hermes" version="4.0.14">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -43,7 +43,7 @@
             <icon>resources/media/hermes_icon.png</icon>
             <fanart>resources/media/hermes_fanart.jpg</fanart>
         </assets>
-        <news>v4.0.13 - Fix Trakt user lists showing only the first 250 items. Trakt now caps the per-page limit at 250, so the old single limit=1000 request silently truncated large lists. List contents are now fetched in pages of 250 (up to 5000 items) and sorted globally after the merge.</news>
+        <news>v4.0.14 - Default subtitles to Greek: auto-download on playback (Action=Auto), primary language Greek, secondary English. Hebrew subtitle matching in the sources window (Ktuvit/Wizdom/embedded) is now disabled by default - re-enable it from settings if needed.</news>
     </extension>
 </addon>
 </addons>
